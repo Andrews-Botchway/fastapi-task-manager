@@ -74,18 +74,23 @@ uvicorn main:app --reload
 ---
 
 ###  Example Usage (via curl)
-- Create a Task
+## Create a Task
 curl -X POST "http://127.0.0.1:8000/tasks?text=Buybread&priority=high"
+
 curl -X POST "http://127.0.0.1:8000/tasks?text=Buy%20milk&priority=high"
 
-- Mark Task as Done
+## Mark Task as Done
 curl -X PUT "http://127.0.0.1:8000/tasks/<task_id>?is_done=true"
- Replace <task_id> with the actual id from the POST response
+
+Replace <task_id> with the actual id from the POST response
+
 curl -X PUT "http://127.0.0.1:8000/tasks/b1f7c5a8-3aef-4c2e-9a7c-1d2b3e4f5a6b?is_done=true"
 
 
-- Delete a Task
+## Delete a Task
 curl -X DELETE "http://127.0.0.1:8000/tasks/<task_id>"
+
 Replace <task_id> with the actual id
+
 curl -X DELETE "http://127.0.0.1:8000/tasks/b1f7c5a8-3aef-4c2e-9a7c-1d2b3e4f5a6b"
 
