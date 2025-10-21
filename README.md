@@ -35,8 +35,16 @@ git clone https://github.com/andrews.botchway/fastapi-task-manager.git
 
 cd fastapi-task-manager
 
+### 2.Create a new virtual environment
+python3 -m venv myenv
+
+### 3.Activate it
+source myenv/bin/activate
+
+
 ### 2. Install Dependencies
-pip install fastapi uvicorn
+python -m pip install --upgrade pip
+python -m pip install fastapi uvicorn
 
 ### 3. Run the App
 uvicorn main:app --reload
