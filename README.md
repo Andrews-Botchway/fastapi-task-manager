@@ -32,6 +32,7 @@
 ### 1. Clone the Repository
 
 git clone https://github.com/andrews.botchway/fastapi-task-manager.git
+
 cd fastapi-task-manager
 
 ### 2. Install Dependencies
