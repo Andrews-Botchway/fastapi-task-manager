@@ -59,6 +59,8 @@ uvicorn main:app --reload
 
 --- 
 
+![alt text](image.png)
+
 
 ###  API Endpoints
 | Method | Endpoint           | Description |
